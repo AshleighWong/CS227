@@ -10,7 +10,7 @@ def is_palindrome(input_s: str):
     for char in input_s.lower().replace(' ', ''):
         if char.isalnum():
             que.appendleft(char)
-    while len(q) > 1:
+    while len(que) > 1:
         left = que.popleft()
         right = que.pop()
         if left != right:
